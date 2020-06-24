@@ -1,12 +1,11 @@
 const express = require("express");
-const mongojs = require("mongojs");
+//const mongojs = require("mongojs");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
 
-//const PORT = 3000;
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;``
 
-const db = require("./model");
+const db = require("./models");
 const app = express();
 
 app.use(morgan("dev"));
