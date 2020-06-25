@@ -17,14 +17,7 @@ app.use(express.static("public"));
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/custommethods", { useNewUrlParser: true });
 
-app.get("/api/workouts", (req, res) => {
-    db.Workout.find({})
-      .then(dbUser => {
-        res.json(dbUser);
-      })
-      .catch(err => {
-        res.json(err);
-      });
-  });
+require("./routes/html-routes.js")(app)
+require("./routes/api-routes.js")(app)
 
 app.listen(PORT, () => console.log(`server listening at http:localhost:${PORT}/`))
