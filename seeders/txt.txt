@@ -1,0 +1,9 @@
+Locally
+local$ heroku run bash
+
+Heroku
+$ npm run seed
+$ exit
+
+Locally
+local$ 
