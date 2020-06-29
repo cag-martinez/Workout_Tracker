@@ -189,11 +189,11 @@ function populateChart(data) {
 function duration(data) {
   let durations = [];
 
-  data.forEach(workout => {
-    workout.exercises.forEach(exercise => {
-      durations.push(exercise.duration);
-    });
-  });
+ // data.forEach(workout => {
+    // workout.exercises.forEach(exercise => {
+    //   durations.push(exercise.duration);
+    // });
+  //});
 
   // return durations;
   return [ 10, 20, 30]
